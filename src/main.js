@@ -51,8 +51,8 @@ controls.enabled = true
 // ========== Carregador de modelos ==========
 const loader = new GLTFLoader()
 
-// URL do modelo GLTF na pasta public/modelo
-const modelUrl = '/modelo/scene.gltf'
+// URL do modelo GLTF na pasta src/assets/modelo
+const modelUrl = new URL('./assets/modelo/scene.gltf', import.meta.url).href
 
 let loadedModel = null
 
